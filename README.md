@@ -6,7 +6,7 @@ It's build on top of the official Microsoft mssql container : https://hub.docker
 ## Running
 
 ```
-docker run -d -e SA_PASSWORD=<passord> -e SQLSERVER_DATABASE=<db name> -e SQLSERVER_USER=<user> -e SQLSERVER_PASSWORD=<password> -p <local port>:1433 <image name>
+docker run -d -e SA_PASSWORD=<passord> -e SQLSERVER_DATABASE=<db name> -e SQLSERVER_USER=<user> -e SQLSERVER_PASSWORD=<password> -p <local port>:1433 exoplatform/sqlserver:ctp2-1-1 
 ```
 
 :warning: For Docker4Mac and Docker4Windows users, your docker instance must have at least **3192Mo of memory** allocated.
