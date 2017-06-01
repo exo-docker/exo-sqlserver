@@ -1,4 +1,4 @@
-FROM microsoft/mssql-server-linux:ctp2-0
+FROM microsoft/mssql-server-linux:ctp2-1
 
 WORKDIR /tmp
 
