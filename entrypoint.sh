@@ -34,7 +34,22 @@ cd /sqlserver
 /opt/mssql/bin/sqlservr &
 
 # Wait for database availability
-/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -S localhost -U SA -P "${SA_PASSWORD}" -Q "select 1"
+database_starting=1
+delay=10
+max_count=30 # Waiting 5 minutes for database startup
+check_count=0
+
+while [ ${database_starting} -gt 0 ]; do
+  sleep ${delay}
+  /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -S localhost -U SA -P "${SA_PASSWORD}" -Q "select 1"
+  database_starting=$?
+
+  check_count=$(( $check_count + 1 ))
+  if [ ${check_count} -ge ${max_count} ]; then
+    echo "ERROR Database not available afer $(( $max_count * $delay ))s"
+    exit 1
+  fi
+done 
 
 echo "Database configuration in progress..."
 
