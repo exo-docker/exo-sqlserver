@@ -1,4 +1,7 @@
-FROM microsoft/mssql-server-linux:ctp2-1
+FROM microsoft/mssql-server-linux:2017-GA
+
+ENV ACCEPT_EULA=y
+ENV MSSQL_PID=Express
 
 WORKDIR /tmp
 
