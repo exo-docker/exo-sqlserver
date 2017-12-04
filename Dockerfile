@@ -1,4 +1,4 @@
-FROM microsoft/mssql-server-linux:2017-GA
+FROM microsoft/mssql-server-linux:2017-CU1
 
 ENV ACCEPT_EULA=y
 ENV MSSQL_PID=Express
