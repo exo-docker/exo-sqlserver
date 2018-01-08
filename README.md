@@ -13,7 +13,7 @@ docker run -d -e SA_PASSWORD=<passord> -e SQLSERVER_DATABASE=<db name> -e SQLSER
 
 Supported environment variables :
 - SA_PASSWORD : The password of the SA user
-- SQLSERVER_DATABASE : the database name to user
+- SQLSERVER_DATABASE : the database name to use
 - SQLSERVER_USER : the username to use. It will be the owner of the database
 - SQLSERVER_PASSWORD : the password of the username
 
