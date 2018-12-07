@@ -7,14 +7,14 @@ It's build on top of the official Microsoft mssql image : https://hub.docker.com
 
 | Version   | Microsoft base image                   | Status      |
 | --------- | -------------------------------------- | ----------- |
-| 2017-CU-8 | microsoft/mssql-server-linux:2017-CU-8 | Recommended |
-| 2017-CU-7 | microsoft/mssql-server-linux:2017-CU-7 | Valid       |
-| 2017-CU-6 | microsoft/mssql-server-linux:2017-CU-6 | Valid       |
-| 2017-CU-5 | microsoft/mssql-server-linux:2017-CU-5 | Valid       |
-| 2017-CU-4 | microsoft/mssql-server-linux:2017-CU-4 | Valid       |
-| 2017-CU-3 | microsoft/mssql-server-linux:2017-CU-3 | Valid       |
-| 2017-CU-2 | microsoft/mssql-server-linux:2017-CU-2 | Valid       |
-| 2017-CU-1 | microsoft/mssql-server-linux:2017-CU-1 | Valid       |
+| 2017-CU8 | microsoft/mssql-server-linux:2017-CU-8 | Recommended |
+| 2017-CU7 | microsoft/mssql-server-linux:2017-CU-7 | Valid       |
+| 2017-CU6 | microsoft/mssql-server-linux:2017-CU-6 | Valid       |
+| 2017-CU5 | microsoft/mssql-server-linux:2017-CU-5 | Valid       |
+| 2017-CU4 | microsoft/mssql-server-linux:2017-CU-4 | Valid       |
+| 2017-CU3 | microsoft/mssql-server-linux:2017-CU-3 | Valid       |
+| 2017-CU2 | microsoft/mssql-server-linux:2017-CU-2 | Valid       |
+| 2017-CU1 | microsoft/mssql-server-linux:2017-CU-1 | Valid       |
 | 2017-GA   | microsoft/mssql-server-linux:2017-GA   | Valid       |
 | ctp-2-1   | microsoft/mssql-server-linux:ctp2-1    | Deprecated  |
 | ctp-2     | microsoft/mssql-server-linux:ctp2-0    | Deprecated  |
